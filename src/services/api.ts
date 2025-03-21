@@ -34,7 +34,7 @@ export const createEntity = () => {
 };
 
 export const getTreeRows = () => {
-  const eId = 157461;
+  const eId = getEID();
 
   return getResource({
     url: `${baseUrl}/v1/outlay-rows/entity/${eId}/row/list`,
@@ -57,7 +57,7 @@ export const createRowInEntity = ({
   estimatedProfit: number;
   parentId?: null | number;
 }) => {
-  const eId = 157461;
+  const eId = getEID();
 
   return getResource({
     url: `${baseUrl}/v1/outlay-rows/entity/${eId}/row/create`,
@@ -79,7 +79,7 @@ export const createRowInEntity = ({
 };
 
 export const deleteRow = (id: number) => {
-  const eId = 157461;
+  const eId = getEID();
 
   return getResource({
     url: `${baseUrl}/v1/outlay-rows/entity/${eId}/row/${id}/delete`,
@@ -102,7 +102,7 @@ export const updateRow = ({
   overheads: number;
   estimatedProfit: number;
 }) => {
-  const eId = 157461;
+  const eId = getEID();
 
   return getResource({
     url: `${baseUrl}/v1/outlay-rows/entity/${eId}/row/${id}/update`,
