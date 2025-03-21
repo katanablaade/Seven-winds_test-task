@@ -31578,6 +31578,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   getTreeRows: () => (/* binding */ getTreeRows),
 /* harmony export */   updateRow: () => (/* binding */ updateRow)
 /* harmony export */ });
+/* harmony import */ var src_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/utils */ "./src/utils/index.ts");
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -31587,6 +31588,7 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+
 const baseUrl = 'http://185.244.172.108:8081';
 const getResource = ({ url, method, body }) => __awaiter(void 0, void 0, void 0, function* () {
     let config = {};
@@ -31606,14 +31608,14 @@ const createEntity = () => {
     });
 };
 const getTreeRows = () => {
-    const eId = 157461;
+    const eId = (0,src_utils__WEBPACK_IMPORTED_MODULE_0__.getEID)();
     return getResource({
         url: `${baseUrl}/v1/outlay-rows/entity/${eId}/row/list`,
         method: 'GET',
     });
 };
 const createRowInEntity = ({ rowName, salary, equipmentCosts, overheads, estimatedProfit, parentId = null, }) => {
-    const eId = 157461;
+    const eId = (0,src_utils__WEBPACK_IMPORTED_MODULE_0__.getEID)();
     return getResource({
         url: `${baseUrl}/v1/outlay-rows/entity/${eId}/row/create`,
         method: 'POST',
@@ -31633,14 +31635,14 @@ const createRowInEntity = ({ rowName, salary, equipmentCosts, overheads, estimat
     });
 };
 const deleteRow = (id) => {
-    const eId = 157461;
+    const eId = (0,src_utils__WEBPACK_IMPORTED_MODULE_0__.getEID)();
     return getResource({
         url: `${baseUrl}/v1/outlay-rows/entity/${eId}/row/${id}/delete`,
         method: 'DELETE',
     });
 };
 const updateRow = ({ id, rowName, salary, equipmentCosts, overheads, estimatedProfit, }) => {
-    const eId = 157461;
+    const eId = (0,src_utils__WEBPACK_IMPORTED_MODULE_0__.getEID)();
     return getResource({
         url: `${baseUrl}/v1/outlay-rows/entity/${eId}/row/${id}/update`,
         method: 'POST',
@@ -34577,4 +34579,4 @@ root.render((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components_a
 
 /******/ })()
 ;
-//# sourceMappingURL=main.72c6594e.js.map
+//# sourceMappingURL=main.6c06ec49.js.map
