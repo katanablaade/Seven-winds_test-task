@@ -1,0 +1,39 @@
+.table {
+  width: calc(100% - 240px);
+  margin-left: 240px;
+  margin-top: 92px;
+
+  .table-captures {
+    display: flex;
+    padding-top: 7px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-bottom: 1px solid rgb(65, 65, 68);
+
+    .table-captures-1,
+    .table-captures-2 {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      color: rgb(161, 161, 170);
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 130%;
+      letter-spacing: 0.1px;
+      overflow: hidden;
+      .table-captures-1-item {
+        height: 30px;
+        width: 790px;
+        padding-left: 10px;
+      }
+      .table-captures-1-item:first-child {
+        width: 110px;
+      }
+      .table-captures-2-item {
+        height: 30px;
+        width: 200px;
+      }
+    }
+  }
+}

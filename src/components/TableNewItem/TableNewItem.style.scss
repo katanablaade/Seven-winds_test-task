@@ -1,0 +1,32 @@
+.table-content-input {
+  outline: none;
+  border: 1px solid rgb(65, 65, 68);
+  border-radius: 6px;
+  background: inherit;
+  color: rgb(113, 113, 122);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.1px;
+  padding: 5px 0 5px 10px;
+}
+.error {
+  border: 1px solid red;
+}
+
+.table-content-1-input {
+  height: 30px;
+  width: 757px;
+  padding-left: 10px;
+}
+
+.table-content-1-input:first-child {
+  padding-top: 0;
+  width: 110px;
+}
+
+.table-content-2-input {
+  height: 30px;
+  width: 200px;
+}
